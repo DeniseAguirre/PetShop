@@ -7,10 +7,12 @@
   padding: 0.7rem;
     height: 10vw;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #333333af;
+}
+body{
+    border: solid black 2px;
 }
 .caja-imagen{
-    background-color: chartreuse;
     display: flex;
     align-items: center;
     height: 50%;
@@ -26,15 +28,16 @@ align-items: center;
 }
 
  nav a{
-    border-bottom: solid black 1px;
+   
+    border-bottom: solid #883A1B 1px;
 }
 .ancors{
     text-decoration: none !important;
-    background-color: aqua;
     display: flex;
     align-items: center;
     height: 30%;
     margin-right: 5px;
+ 
 
 }
 
@@ -44,11 +47,13 @@ align-items: center;
     height:max-content;
 }
 .imagen{
-    background-image: url(../images/perro2-contacto.jpg);
-    background-position: top;
+    background-image: url(../images/contancto-perro.jpg);
+    
+    background-position:center; 
+    
     background-size: cover;
     width:100%;
-    height: 25vw;
+    height: 35vw;
     margin-top: 1rem;
 }
 .titulos{
@@ -79,7 +84,7 @@ flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     text-align: center;
-    background-color:#C77D56;
+    background-color:#883A1B;
     height: 35%;
 }
 .parte2{
@@ -102,7 +107,7 @@ background-color: rgb(237, 234, 229);
     height: 50%;
 }
 span{
-    color: #C77D56;
+    color: #883A1B;
 }
 /*-------------------------------------------------------------mapa----------------------------------------------------------- */
 .caja-mapa{
@@ -149,9 +154,10 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(73, 215, 73);
+    background-color: #883A1B;
     border-radius: 10px;
   }
+  /* -------------------------------------------------------boton----------------------------------------------------------- */
   .back-to-top {
     position: fixed;
     right: 40px;
@@ -160,7 +166,7 @@ body::-webkit-scrollbar {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #222;
+    background-color: #883A1B;
     border-radius: 6px;
     font-size: 13px;
     color: #fff;
@@ -179,7 +185,7 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 .back-to-top {
-    background-color: rgb(73, 215, 73);
+    background-color:#883A1B;
     color: #2D2A2B;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 35%);
 }
