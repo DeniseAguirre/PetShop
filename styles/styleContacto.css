@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+  padding: 0.7rem;
+    height: 10vw;
+    width: 100%;
+    background-color: #333333af;
+}
+body{
+    border: solid black 2px;
+}
+.caja-imagen{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+.imagen-ancors{
+display: flex;
+height: 100%;
+justify-content: space-between;
+align-items: center;
+}
+.imagen-logo{
+    width: 7.5vw;
+}
+
+ nav a{
+   
+    border-bottom: solid #883A1B 1px;
+}
+.ancors{
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    margin-right: 5px;
+ 
+
+}
+
+
+/* -----------------------------------------------------------main---------------------------------------------------------- */
+.main-contacto{
+    height:max-content;
+}
+.imagen{
+    background-image: url(../images/contancto-perro.jpg);
+    
+    background-position:center; 
+    
+    background-size: cover;
+    width:100%;
+    height: 35vw;
+    margin-top: 1rem;
+}
+.titulos{
+    margin-top: 8vw;
+}
+/* ------------------------------------------------carta con la informacion----------------------------------------------------------------- */
+.div-cartas{
+min-height: 35vw;
+margin-top: 8vw;
+display: flex ;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.carta-sede{
+    width: 22rem;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* partes de las cartas sede */
+.parte1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color:#883A1B;
+    height: 35%;
+}
+.parte2{
+    height: 65%;
+    width: 100%;
+background-color: rgb(237, 234, 229);
+    padding: 30px 0px 30px 0px;  
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    
+}
+.telefono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+span{
+    color: #883A1B;
+}
+/*-------------------------------------------------------------mapa----------------------------------------------------------- */
+.caja-mapa{
+height: 80vh;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.mapa{
+    width: 80%;
+    height: 30vw;
+    border-radius: 1rem;
+}
+/* ------------------------------------------------------formulario----------------------------------------------------------------------------------------------- */
+.formulario-completo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clase-formulario{
+    margin-top:1rem ;
+     border:solid black 1px ;
+     width: 80%;
+}
+ .opciones-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.titulo-formulario{
+
+   text-align: center;
+   margin-bottom: 1rem;
+
+}
+/*/ ------------------------------------------------------barra de scroll --------------------------------------------------------------/*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #883A1B;
+    border-radius: 10px;
+  }
+  /* -------------------------------------------------------boton----------------------------------------------------------- */
+  .back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #883A1B;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    z-index: 300;
+}
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top i {
+    font-weight: bold;
+}
+.back-to-top {
+    background-color:#883A1B;
+    color: #2D2A2B;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 35%);
+}
+.lorada {
+    font-family: "lorada-font";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: inherit;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+}
+/* -----------------------------------------------------footer-------------------------------------------------------------------------------------------- */
+footer{
+    height: 20vw;
+    background-color: aqua;
+}
