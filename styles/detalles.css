@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     font-family: "inter", sans-serif;
     background-color: rgba(95, 87, 87, 0.479);
-}
+} */
 
 main{
     margin: 2rem;
@@ -41,9 +41,9 @@ header{
     background-color: #524f4f;
 }
 
-.alto {
+/* .alto {
     min-height: 100vh;
-}
+} */
 
 
 .img-logo{
@@ -113,21 +113,3 @@ h5{
 
 
 
-
-
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.479);
-    color: rgb(0, 0, 0);
-    padding: 2rem;
-}
-
-.bi-facebook, .bi-instagram, .bi-whatsapp{
-    margin: 8px;
-    color: rgb(5, 5, 5);
-    flex-wrap: wrap;
-}
