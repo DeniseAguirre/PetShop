@@ -14,7 +14,7 @@ main{
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.479);
+    /* background-color: rgba(0, 0, 0, 0.479); */
     border-radius: 1rem;
 }
 
@@ -77,6 +77,12 @@ h1 {
     line-height: 1.6;
 }
 
+.img-perro{
+    max-width: 40vh;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
 .container-h1 {
     display: flex;
     justify-content: space-evenly;
@@ -117,23 +123,61 @@ h5{
 
 
 
-
-
-
-
-
-footer{
-    display: flex;
-    justify-content: space-between;
+.d-flex2 {
+    display: flex;;
+    flex-direction: column;
     align-items: center;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.479);
-    color: rgb(0, 0, 0);
-    padding: 2rem;
+    padding: 1rem;
+    margin: 2rem;
 }
 
-.bi-facebook, .bi-instagram, .bi-whatsapp{
-    margin: 8px;
-    color: rgb(5, 5, 5);
-    flex-wrap: wrap;
+
+.slide{
+	width: 100%;
+}
+
+@keyframes scroll {
+	0% {
+	transform: translateX(0);
+	}
+	100% {
+	transform: translateX(calc(-250px * 1));
+	}
+}
+
+.slide-track {
+	animation: scroll 5s linear infinite;
+	display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px){
+    .main-div {
+        flex-direction: column;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+    .div-perro, .img-perro{
+        width: 100%;
+    }
+    .cartas {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .img-slider{
+        width: auto;
+    }
+
+    footer{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
 }
