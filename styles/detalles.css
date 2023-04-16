@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     font-family: "inter", sans-serif;
     background-color: rgba(95, 87, 87, 0.479);
-}
+} */
 
 main{
     margin: 2rem;
@@ -41,9 +41,9 @@ header{
     background-color: #524f4f;
 }
 
-.alto {
+/* .alto {
     min-height: 100vh;
-}
+} */
 
 
 .img-logo{
