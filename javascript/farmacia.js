@@ -1,5 +1,8 @@
 const container = document.getElementById("cards-farmacia");
-let petshopData;
+const containerCategorias = document.getElementById("category-js")
+const containerSearch = document.getElementById("search-js");
+
+let petshopData, productosFarmacia, perros, gatos;
 
 //petición
 const url = "https://mindhub-xj03.onrender.com/api/petshop"
@@ -11,8 +14,10 @@ fetch(url)
             productosFarmacia = petshopData.filter(productos => productos.categoria == "farmacia");
             console.log(productosFarmacia)
             printCards(productosFarmacia, container)
-            
-            
+            perros = filtroMascotas(productosFarmacia, "perro")
+            console.log(perros)
+            gatos = filtroMascotas(productosFarmacia, "gato")
+            console.log(gatos) 
     })
     .catch(err => console.log("Error :", err))
 
@@ -43,3 +48,72 @@ function printCards(listaProductos, contenedor) {
     }
     contenedor.innerHTML = template;
 }
+
+function filtroMascotas(productos, text) {
+    const mascotaElegida = productos.filter((productos) =>
+    productos.descripcion.toLowerCase().includes(text.toLowerCase()) || productos.producto.toLowerCase().includes(text.toLowerCase())
+    );
+    return mascotaElegida;
+}
+
+function filtroTexto(productos, texto) {
+    return productos.filter((producto) =>
+    producto.producto.toLowerCase().includes(texto.toLowerCase()) || producto.descripcion.toLowerCase().includes(texto.toLowerCase())
+    );
+}
+
+// function crossFilter(productos, text) {
+//     const resultFilterProductos = filterProducts(productos, text);
+//     const resultFilterText = filterText(resultFilterProductos, text);
+//     return resultFilterText;
+// }
+
+//evenListeners
+containerCategorias.addEventListener("click", (e) => {
+
+    let categoriaSeleccionada;
+
+    if (e.target.tagName === "A") {
+        categoriaSeleccionada = e.target.getAttribute("data-value");
+        const enlaces = containerCategorias.querySelectorAll('a');
+        enlaces.forEach(enlace => enlace.classList.remove('active'));
+        e.target.classList.add('active');
+    }
+    // let categoriaSeleccionada = containerTodos.textContent.trim();
+    if (categoriaSeleccionada === "Todos"){
+        productosFiltrados = productosFarmacia;
+    }
+    if (categoriaSeleccionada === "Perros"){
+        productosFiltrados = perros;
+    }
+    if (categoriaSeleccionada === "Gatos"){
+        productosFiltrados = gatos;
+    }
+  
+    const textoBuscado = containerSearch.value;
+    console.log(textoBuscado);
+    let filtradosTexto = productosFiltrados.filter((producto) => {
+      return (
+        
+        (producto.producto.toLowerCase().includes(textoBuscado.toLowerCase()) ||
+          producto.descripcion.toLowerCase().includes(textoBuscado.toLowerCase()))
+      );
+    });
+    printCards(filtradosTexto, container);
+  });
+  
+  containerSearch.addEventListener("keyup", () => {
+    
+    
+    const textoBuscado = containerSearch.value;
+    const productosFiltrados = petshopData.filter((producto) => {
+      return (
+        producto.categoria === categoriaSeleccionada &&
+        (producto.producto.toLowerCase().includes(textoBuscado.toLowerCase()) ||
+          producto.descripcion.toLowerCase().includes(textoBuscado.toLowerCase()))
+      );
+    });
+    printCards(productosFiltrados, container);
+  });
+  
+  

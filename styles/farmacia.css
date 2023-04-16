@@ -48,7 +48,7 @@ header {
 .img-logo {
     width: 3rem;
     height: auto;
-    margin-right: .3rem
+   
 }
 
 .nombre {
@@ -114,7 +114,7 @@ footer {
 }
 
 /* .scroll-text {
-    animation: scroll 30s infinite reverse;
+    animation: scroll 10s infinite reverse;
   }
   
   @keyframes scroll {
@@ -127,16 +127,24 @@ footer {
     100% {
       transform: translateX(100%);
     }
-  } */
+  }
   
 ul {
     list-style: none;
-}
+} */
 
 .categoria {
-    border: 1px solid #019267;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active {
+    border-bottom: 3px solid #019267;
+}
+
+.link-categorias {
+    text-decoration: none;
+    color: black
 }
 
