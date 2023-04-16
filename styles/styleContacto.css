@@ -9,6 +9,9 @@
     width: 100%;
     background-color: #333333af;
 }
+body{
+    border: solid black 2px;
+}
 .caja-imagen{
     display: flex;
     align-items: center;
