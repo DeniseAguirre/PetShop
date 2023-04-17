@@ -12,7 +12,10 @@ if (!nombre.value||!apellido.value||!comentario.value){
     alert(`¡tiene que rellenar los campos!`)
     
 } else{
-    alert("¡El mensaje se ha enviado correctamente!")
+
+    alert("¡La consulta se ha enviado correctamente!")
+
+
 }
     
 })
