@@ -39,26 +39,27 @@
 
         <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
       </div>
-      <ul class="nav justify-content-center navegacion">
-        <li class="nav-item">
-          <a class="nav-link text-black" aria-current="page" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black active" href="#">Farmacia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black" href="./juguetes.html">Juguetes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black" href="./contacto.html">Contacto</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link text-black" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link text-black active" href="#">Farmacia</a>
+              <a class="nav-link text-black" href="./juguetes.html">Juguetes</a>
+              <a class="nav-link text-black" href="./contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="hero-farmacia d-flex justify-content-center align-items-center">
         <h2 class="titulo-hero">Farmacia</h2>
       </div>
-      <div class="filtros row m-4 d-flex justify-content-center" id="category-js">
+      <div class="filtros row p-4 d-flex justify-content-center" id="category-js">
         <div class="col-2 categoria">
           <a class="link-categorias active" data-value="Todos" href="#"><i class="fa-solid fa-paw fa-lg"></i> Todos</a>
         </div>
