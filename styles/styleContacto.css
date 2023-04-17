@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header{
+/* .header{
   padding: 0.7rem;
     height: 10vw;
     width: 100%;
     background-color: #333333af;
-}
+} */
 body{
     border: solid black 2px;
 }
@@ -17,7 +17,18 @@ body{
     align-items: center;
     height: 50%;
 }
-.imagen-ancors{
+header {
+    background-color: #019267;
+}
+
+.info{
+    background-color: #245953;
+    padding: .3rem;
+    font-size: .7rem;
+    text-align: center;
+    color: white;
+}
+/* .imagen-ancors{
 display: flex;
 height: 100%;
 justify-content: space-between;
@@ -26,21 +37,21 @@ align-items: center;
 .imagen-logo{
     width: 7.5vw;
 }
-
- nav a{
-   
-    border-bottom: solid #883A1B 1px;
-}
 .ancors{
     text-decoration: none !important;
     display: flex;
     align-items: center;
     height: 30%;
     margin-right: 5px;
- 
-
 }
-
+.paginas{
+    color: white;
+    border-bottom: solid #883A1B 1px;
+}
+.paginas:hover{
+color:#883A1B;
+}
+ */
 
 /* -----------------------------------------------------------main---------------------------------------------------------- */
 .main-contacto{
@@ -74,6 +85,8 @@ flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
+ 
 }
 /* partes de las cartas sede */
 .parte1{
@@ -86,12 +99,18 @@ flex-wrap: wrap;
     text-align: center;
     background-color:#883A1B;
     height: 35%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .parte2{
     height: 65%;
     width: 100%;
-background-color: rgb(237, 234, 229);
+background-color: rgb(164, 162, 159);
     padding: 30px 0px 30px 0px;  
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
 }
 .ubicacion{
     display: flex;
@@ -122,15 +141,22 @@ justify-content: center;
     border-radius: 1rem;
 }
 /* ------------------------------------------------------formulario----------------------------------------------------------------------------------------------- */
+.t-formulario{
+    margin-top: 3rem;
+}
+
 .formulario-completo{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .clase-formulario{
-    margin-top:1rem ;
-     border:solid black 1px ;
-     width: 80%;
+    background-size:contain;
+    background-position: -60px 0;  
+    background-repeat: no-repeat;
+    margin-top:1vw ; 
+    border:solid black 1px ; 
+    width: 80%;
 }
  .opciones-comentario{
     display: flex;
@@ -138,27 +164,35 @@ justify-content: center;
     align-items: center;
 } 
 .titulo-formulario{
-
    text-align: center;
    margin-bottom: 1rem;
-
 }
+#boton{
+    background-color: #883A1B;
+    color: white;
+}
+#boton:hover{
+    background-color:white;
+    color: #883A1B;
+    border: solid 1px #883A1B ;
+}
+
 /*/ ------------------------------------------------------barra de scroll --------------------------------------------------------------/*/
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #883A1B;
     border-radius: 10px;
-  }
+}
   /* -------------------------------------------------------boton----------------------------------------------------------- */
-  .back-to-top {
+.back-to-top {
     position: fixed;
     right: 40px;
     bottom: 50px;
@@ -172,7 +206,7 @@ body::-webkit-scrollbar {
     color: #fff;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden;  
     text-decoration: none !important;
     transition: all 0.3s ease;
     z-index: 300;
@@ -201,8 +235,31 @@ body::-webkit-scrollbar {
     -webkit-font-smoothing: antialiased;
     color: white;
 }
+
 /* -----------------------------------------------------footer-------------------------------------------------------------------------------------------- */
 footer{
     height: 20vw;
-    background-color: aqua;
+   /*  background-color: aqua; */
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.slide-track{
+	width: 100%;
+	animation: scroll 20s linear infinite;
+	display: flex;
+}
+.slide{
+	width: 100%;
+}
+@media (min-width:320px) and (max-width: 769px){
+    .caja-mapa{
+        margin-top: 5rem;
+        height: 50vw;
+    }
+    .carta-sede{
+        margin-top: 1rem;
+        width: 18rem;
+    }
+    .header{
+        height: 5rem;
+    }
 }
