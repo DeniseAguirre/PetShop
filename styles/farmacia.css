@@ -109,11 +109,11 @@ footer {
     object-fit: cover;
 }
 
-.nav-link {
+/* .nav-link {
     font-size: 1.2rem;
 }
 
-/* .scroll-text {
+.scroll-text {
     animation: scroll 10s infinite reverse;
   }
   
@@ -127,11 +127,11 @@ footer {
     100% {
       transform: translateX(100%);
     }
-  }
+  } */
   
 ul {
     list-style: none;
-} */
+}
 
 .categoria {
     display: flex;
@@ -146,5 +146,6 @@ ul {
 .link-categorias {
     text-decoration: none;
     color: black
+
 }
 
