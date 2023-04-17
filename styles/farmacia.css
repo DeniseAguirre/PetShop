@@ -1,0 +1,150 @@
+/* 
+
+font-family: 'Jost', sans-serif; */
+
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.contenedor-principal {
+    padding: 0 !important;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: #019267;
+}
+
+.info{
+    background-color: #245953;
+    padding: .3rem;
+    font-size: .7rem;
+    text-align: center;
+    color: white;
+}
+
+/* .marca {
+    flex-direction: column;
+} */
+
+.img-logo {
+    width: 3rem;
+    height: auto;
+   
+}
+
+.nombre {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.carrito {
+    align-self: center;
+    margin: 2rem;
+}
+
+.navegacion {
+    background-color: bisque;
+}
+
+footer {
+    background-color: #019267;
+    height: auto;
+    margin-top: auto;
+}
+.copyright {
+    color: white;
+    font-size: .8rem;
+    padding: 1rem ;
+    border-top: .5px solid #245953;
+}
+
+.redes-sociales {
+    align-self: center;
+    margin: 1rem;
+}
+
+.icon-redes {
+    font-size: 1.5rem; 
+    color: white;
+    margin: .5rem;
+}
+
+.hero-farmacia {
+    background-image: url("../images/farmacia.png");
+    width: 100%;
+    height: 40vh;
+    object-fit:cover;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+.titulo-hero {
+    font-size: 3rem;
+}
+
+
+.card-img-top {
+    height: 50%;
+    object-fit: cover;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* .scroll-text {
+    animation: scroll 10s infinite reverse;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+ul {
+    list-style: none;
+} */
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    border-bottom: 3px solid #019267;
+}
+
+.link-categorias {
+    text-decoration: none;
+    color: black
+}
+
