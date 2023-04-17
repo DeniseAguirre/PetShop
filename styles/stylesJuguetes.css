@@ -3,52 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: darkolivegreen;
-    border-radius: 1rem;
+header {
+    background-color: #019267;
 }
-body{
-    font-family: "inter", sans-serif;
-    background-color: rgba(95, 87, 87, 0.479);
+main{
+    background-image: url(../images/Perro\ huellas\ frontera\ _\ marco\ de\ grunge\ fondo\ marrón.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.img-logo{
-    object-fit: cover;
-    width: 100px !important;
-    
-}
-.navbar-expand-lg .navbar-collapse {
-    flex-basis: auto;
-    justify-content: flex-end;
-    
+.info{
+    background-color: #245953;
+    padding: .3rem;
+    font-size: .7rem;
+    text-align: center;
+    color: white;
 }
 
-.alto {
-    min-height: 100vh;
+.img-logo {
+    width: 3rem;
+    height: auto;
+   
+}
+
+.nombre {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.carrito {
+    align-self: center;
+    margin: 2rem;
+}
+.navegacion {
+    background-color: bisque;
 }
 .card-content{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.navbar-nav a{
-    font-weight: bold;
-    border: 1px solid #9e6e25;
-    border-radius: 4px;
-    text-align: center;
-    margin: 0.5rem;
-    color: #b6b6b6;
-   
-}
 
-main{
-    background-image: url(../images/Perro\ huellas\ frontera\ _\ marco\ de\ grunge\ fondo\ marrón.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .descripcion-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 5rem;
     max-width: 100vw;
     min-height: 50vh;
 }
@@ -59,7 +59,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35rem;
+    width: 40rem;
     height: 20rem;
 }
 .celular-editar{
@@ -72,9 +72,18 @@ main{
     height: 13rem;
 }
 .descripcion-container3{
-    background-color: aqua;
-    width: 20rem;
-    height: 20rem;
+    margin: 5rem;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion-container3 p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 video{
     display: flex;
@@ -82,34 +91,12 @@ video{
     width: 100%;
     height: 78%;
 }
-.footer-contain{
-    background-color: darkolivegreen;
-    border-radius: 1rem;
-    min-height: 8vh;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-h1{
-    background-color: rgb(205, 255, 213)    ;
-    max-width: 100vw;
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image:url("/images/—Pngtree—cartoon\ simple\ animal\ background_1092043.jpg");
-    background-size: cover;
-}
 .contenedor-cartas{
     max-width: 100vw;
 }
-main{
-    background-color:saddlebrown;
-}
+
 .footer-contain{
-    background-color: darkolivegreen;
+    background-color: #019267;
     min-height: 8vh;
 }
