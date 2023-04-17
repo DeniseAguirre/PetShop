@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: darkolivegreen;
+    border-radius: 1rem;
+}
+body{
+    font-family: "inter", sans-serif;
+    background-color: rgba(95, 87, 87, 0.479);
+}
+.img-logo{
+    object-fit: cover;
+    width: 100px !important;
+    
+}
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
+    justify-content: flex-end;
+    
+}
+
+.alto {
+    min-height: 100vh;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-nav a{
+    font-weight: bold;
+    border: 1px solid #9e6e25;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0.5rem;
+    color: #b6b6b6;
+   
+}
+
+main{
+    background-image: url(../images/Perro\ huellas\ frontera\ _\ marco\ de\ grunge\ fondo\ marrón.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.descripcion-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 50vh;
+}
+.descripcion-container2{
+    padding: 2rem;
+    background-image:url(../images/celular.png) ;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 20rem;
+}
+.celular-editar{
+    background-color: black;
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 13rem;
+}
+.descripcion-container3{
+    background-color: aqua;
+    width: 20rem;
+    height: 20rem;
+}
+video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 78%;
+}
+.footer-contain{
+    background-color: darkolivegreen;
+    border-radius: 1rem;
+    min-height: 8vh;
+}
