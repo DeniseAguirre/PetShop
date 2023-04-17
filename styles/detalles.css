@@ -14,13 +14,7 @@
     font-family: 'Jost', sans-serif;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: white
-    
+
 }
 
 .contenedor-principal {
@@ -46,10 +40,6 @@ header {
     flex-direction: column;
 }
 
-.img-logo {
-    width: 3rem;
-    height: auto;
-    margin-right: .3rem
 }
 
 .nombre {
@@ -190,8 +180,4 @@ ul {
     min-height: 40vh;
     min-width: 40vh;
 }
-
-.input-group{
-    width: 9rem !important;
-    height: 2rem !important;
-}
+ main
