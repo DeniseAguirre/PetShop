@@ -53,7 +53,6 @@ header{
 
 /* Carrito  */
 
-
 .buy-card button{
     display: none;
 }
@@ -88,9 +87,9 @@ header{
 
 .alto header i:hover .buy-card > button{
     display: block;
-    width: 90%;
-    padding: 0.5rem;
-    margin: 10px auto;
+    width: 80%;
+    padding: 5px;
+    margin: 5px auto;
     background-color: transparent;
     border: solid thin #258F67;
     color: #258F67;
@@ -98,7 +97,7 @@ header{
 }
 
 .alto header i:hover .buy-card > button:hover {
-    border: solid thin rebeccapurple;
+    border: solid thin rgb(0, 0, 0);
     transition: all .4s;
 }
 
