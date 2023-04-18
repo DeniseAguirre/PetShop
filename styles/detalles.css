@@ -15,7 +15,7 @@ font-family: 'Jost', sans-serif; */
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -292,10 +292,7 @@ ul {
     flex-direction: column;
 }
 
-#imgarticles{
-    min-height: 40vh;
-    min-width: 40vh;
-}
+
 .barra-superior{
     display: flex;
     justify-content: space-evenly;
@@ -307,7 +304,6 @@ ul {
     max-width: 4rem !important;
 }
 .comprar{
-    min-width: 10rem !important;
-    max-width: 10rem !important;
+    min-width: 12rem !important;
+    max-width: 12rem !important;
 }
-
