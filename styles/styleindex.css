@@ -1,0 +1,6 @@
+
+.bi-facebook, .bi-instagram, .bi-whatsapp{
+    margin: 8px;
+    color: rgb(5, 5, 5);
+    flex-wrap: wrap;
+}
