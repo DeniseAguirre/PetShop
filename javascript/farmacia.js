@@ -30,11 +30,12 @@ function cardTemplate(producto) {
     <img class="card-img-top" src="${producto.imagen}" alt=""></img>
     <div class="card-body">
         <h4 class="card-title">${producto.producto}</h4>
-        <span>$${producto.precio}</span>
+        <span class="precio">$${producto.precio}</span>
         
     </div>
-    <div class="card-footer c-footer d-flex justify-content-center align-items-center">
-    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+    <div class="card-footer c-footer d-flex justify-content-around align-items-center">
+    <a href="./assets/pages/detail.html?_ID=${producto._id}" class="col-4 rows-1 btn btn-producto">detalles</a>
+    <a href="#" class="btn btn-producto">Añadir al carrito</a>
     </div>
 </article> `;
 }

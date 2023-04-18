@@ -34,17 +34,18 @@
         <div class="marca d-flex justify-content-center m-3 align-items-center">
           <h1 class="nombre">Pet</h1>
           <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
-          <h1 class="nombre">Shop</h1>
+          <h1 class="nombre">Store</h1>
         </div>
 
         <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
       </div>
       <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse barra-superior" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
               <a class="nav-link text-black" aria-current="page" href="../index.html">Inicio</a>
               <a class="nav-link text-black active" href="#">Farmacia</a>
@@ -59,15 +60,11 @@
       <div class="hero-farmacia d-flex justify-content-center align-items-center">
         <h2 class="titulo-hero">Farmacia</h2>
       </div>
-      <div class="filtros row p-4 d-flex justify-content-center" id="category-js">
-        <div class="col-2 categoria">
-          <a class="link-categorias active" data-value="Todos"><i class="fa-solid fa-paw fa-lg"></i> Todos</a>
-        </div>
-        <div class="col-2 categoria">
-          <a class="link-categorias" data-value="Perros"><i class="fa-solid fa-dog fa-lg"></i> Perros</a>
-        </div>
-        <div class="col-2 categoria">
-          <a class="link-categorias" data-value="Gatos"><i class="fa-solid fa-cat fa-lg"></i> Gatos</a>
+      <div class="filtros row p-4 d-flex justify-content-center">
+        <div class="categorias d-flex justify-content-around col-8" id="category-js">
+            <a class="link-categorias active" data-value="Todos"><i class="fa-solid fa-paw fa-lg"></i> Todos</a>
+            <a class="link-categorias" data-value="Perros"><i class="fa-solid fa-dog fa-lg"></i> Perros</a>
+            <a class="link-categorias" data-value="Gatos"><i class="fa-solid fa-cat fa-lg"></i> Gatos</a>
         </div>
         <div class="search col-4">
           <form class="d-flex" role="search">
@@ -79,13 +76,39 @@
         id="cards-farmacia">
 
       </div>
+      <!-- <div class="slider">
+				<div class="slide-track">
+					<div class="slide">
+						<img src="/images/Bayer-Cross-150x150.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-21-150x39.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-22-150x27.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-23-150x49.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-25-150x42.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-27-150x38.png"  alt="marcas"  class="img-slider"/>
+					</div>
+					<div class="slide">
+						<img src="/images/Recurso-28-150x61.png"  alt="marcas"  class="img-slider"/>
+					</div>
+				</div>
+			</div> -->
 
     </main>
     <footer>
       <div class="footer-body d-flex justify-content-between">
         <div class="marca d-flex m-3 align-items-center">
+          <h1 class="nombre">Pet</h1>
           <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
-          <h1 class="nombre">PetShop</h1>
+          <h1 class="nombre">Store</h1>
         </div>
         <div class="redes-sociales">
           <i class="bi bi-facebook icon-redes"></i>
@@ -98,11 +121,17 @@
         <p>Diseñado y Desarrollado por Grupo 3 - Cohort 46</p>
       </div>
 
-
+      <a href="#" class="back-to-top is-visible" title="Back To Top">
+        <i class="lorada lorada-arrow-up">
+          ↥
+        </i>
+      </a>
     </footer>
   </div>
   <script src="../javascript/farmacia.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
