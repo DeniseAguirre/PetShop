@@ -6,7 +6,7 @@
 
 body{
     font-family: "inter", sans-serif;
-    background-color: rgba(95, 87, 87, 0.479);
+    background-color: rgb(255, 255, 255);
 }
 
 main{
@@ -49,11 +49,10 @@ header{
     height: 400px !important;
     object-fit: cover;
     object-position: 0% 50%;
-    border-radius: 1rem;
 }
 
 h1 {
-    color: #ffffff;
+    color: #000000;
     width: 30rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -94,7 +93,7 @@ h1 {
 
 h5{
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 
 .btn-cards{
@@ -125,8 +124,9 @@ h5{
 }
 
 
-.slide{
+.slide1{
 	width: 100%;
+    padding: 1rem;
 }
 
 @keyframes scroll {
@@ -139,15 +139,13 @@ h5{
 }
 
 .slide-track {
-	animation: scroll 5s linear infinite;
+	/* animation: scroll 5s linear infinite; */
 	display: flex;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 
-.img-slider{
-    padding: 1rem;
-}
 
 
 footer {
@@ -190,10 +188,6 @@ footer {
 
     .img-slider{
         width: auto;
-    }
-
-    .slider {
-        display: none;
     }
 
     footer{
