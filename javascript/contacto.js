@@ -9,13 +9,14 @@ const apellido = document.getElementById(`apellido`)
 const comentario= document.getElementById(`comentario`)
 
 if (!nombre.value||!apellido.value||!comentario.value){
-    alert(`¡tiene que rellenar los campos!`)
+    swal ( "Ups" ,  "Tiene que rellenar los campos!" ,  "error" )
     
 } else{
-    alert("¡La consulta se ha enviado correctamente!")
+    swal("Que bueno!", "La Consulta se ha enviado correctamente!", "success");
 }
     
 })
+
 
 
 
