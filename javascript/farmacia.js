@@ -2,7 +2,8 @@ const container = document.getElementById("cards-farmacia");
 const containerCategorias = document.getElementById("category-js")
 const containerSearch = document.getElementById("search-js");
 
-let petshopData, productosFarmacia, perros, gatos;
+let petshopData, productosFarmacia, perros, gatos, productosFiltrados;
+let categoriaSeleccionada = "Todos";
 
 //petición
 const url = "https://mindhub-xj03.onrender.com/api/petshop"
@@ -57,28 +58,24 @@ function filtroMascotas(productos, text) {
 }
 
 function filtroTexto(productos, texto) {
-    return productos.filter((producto) =>
-    producto.producto.toLowerCase().includes(texto.toLowerCase()) || producto.descripcion.toLowerCase().includes(texto.toLowerCase())
+    const filtradosTexto = productos.filter((producto) =>
+    producto.producto.toLowerCase().includes(texto.toLowerCase()) 
+    // || producto.descripcion.toLowerCase().includes(texto.toLowerCase())
     );
+    return filtradosTexto;
 }
 
-// function crossFilter(productos, text) {
-//     const resultFilterProductos = filterProducts(productos, text);
-//     const resultFilterText = filterText(resultFilterProductos, text);
-//     return resultFilterText;
-// }
 
 //evenListeners
 containerCategorias.addEventListener("click", (e) => {
-
-    let categoriaSeleccionada;
+    let inputSearch = document.getElementById("search-js");
 
     if (e.target.tagName === "A") {
         categoriaSeleccionada = e.target.getAttribute("data-value");
         const enlaces = containerCategorias.querySelectorAll('a');
         enlaces.forEach(enlace => enlace.classList.remove('active'));
         e.target.classList.add('active');
-    }
+    } 
     // let categoriaSeleccionada = containerTodos.textContent.trim();
     if (categoriaSeleccionada === "Todos"){
         productosFiltrados = productosFarmacia;
@@ -89,31 +86,47 @@ containerCategorias.addEventListener("click", (e) => {
     if (categoriaSeleccionada === "Gatos"){
         productosFiltrados = gatos;
     }
-  
-    const textoBuscado = containerSearch.value;
-    console.log(textoBuscado);
-    let filtradosTexto = productosFiltrados.filter((producto) => {
-      return (
+
+    if(inputSearch.value !== ""){
         
-        (producto.producto.toLowerCase().includes(textoBuscado.toLowerCase()) ||
-          producto.descripcion.toLowerCase().includes(textoBuscado.toLowerCase()))
-      );
-    });
-    printCards(filtradosTexto, container);
-  });
-  
-  containerSearch.addEventListener("keyup", () => {
+    let textoBuscado = inputSearch.value;
+    console.log(textoBuscado);
+    let resultadoFiltro = filtroTexto(productosFiltrados, textoBuscado)
+    printCards(resultadoFiltro, container);
+    } else {
+        printCards(productosFiltrados, container);
+    }
     
+});
+
+
+containerSearch.addEventListener("input", (e) => {
     
-    const textoBuscado = containerSearch.value;
-    const productosFiltrados = petshopData.filter((producto) => {
-      return (
-        producto.categoria === categoriaSeleccionada &&
-        (producto.producto.toLowerCase().includes(textoBuscado.toLowerCase()) ||
-          producto.descripcion.toLowerCase().includes(textoBuscado.toLowerCase()))
-      );
-    });
-    printCards(productosFiltrados, container);
-  });
-  
-  
+    let inputSearch = document.getElementById("search-js");
+    
+
+    if (e.target.tagName === "A") {
+        categoriaSeleccionada = e.target.getAttribute("data-value");
+        const enlaces = containerCategorias.querySelectorAll('a');
+        enlaces.forEach(enlace => enlace.classList.remove('active'));
+        e.target.classList.add('active');
+    } 
+    if (categoriaSeleccionada === "Todos"){
+        productosFiltrados = productosFarmacia;
+    }
+    if (categoriaSeleccionada === "Perros"){
+        productosFiltrados = perros;
+    }
+    if (categoriaSeleccionada === "Gatos"){
+        productosFiltrados = gatos;
+    }
+    if(inputSearch.value !== ""){
+        
+    let textoBuscado = inputSearch.value;
+    console.log(textoBuscado);
+    let resultadoFiltro = filtroTexto(productosFiltrados, textoBuscado)
+    printCards(resultadoFiltro, container);
+    } else {
+        printCards(productosFiltrados, container);
+    }
+});
