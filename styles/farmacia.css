@@ -210,32 +210,6 @@ ul {
     }
     
 }
-/* @media (max-width: 1024px) {
-    .slider{
-        max-width: 100vw;
-        overflow: hidden;
-    }
-} */
-
-/* .slide{
-	width: 100%;
-} */
-
-/* @keyframes scroll {
-	0% {
-	transform: translateX(0);
-	}
-	100% {
-	transform: translateX(calc(-250px * 1));
-	}
-} */
-
-/* .slide-track {
-	animation: scroll 5s linear infinite;
-	display: flex;
-    align-items: center;
-    width: 100%;
-} */
 
 .barra-superior{
     display: flex;
@@ -243,31 +217,7 @@ ul {
     align-items: center;
 }
 
-/* .slider {
-    max-width: 100%;
-    overflow: hidden;
-}
 
-.slide-track {
-    display: flex;
-}
-
-.slide {
-    width: 14.28%;
-}
-
-.slide-track {
-    animation: slide-left 5s linear infinite;
-}
-
-@keyframes slide-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 
 .precio {
     font-size: 1.2rem;
@@ -281,4 +231,59 @@ ul {
 
 .btn-producto {
     background-color:  #EFC368;
+}
+
+/* CARRITO */
+
+.buy-card button{
+    display: none;
+}
+.car-card{
+    display: none;
+}
+
+.car-card li{
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.alto header i:hover > .buy-card{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    background-color: #f7f6f6;
+    border-radius: 1rem;
+}
+
+.alto header i:hover .car-card{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #258F67;
+    color: #258F67;
+}
+
+.alto header i:hover .buy-card > button{
+    display: block;
+    width: 90%;
+    padding: 0.5rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #258F67;
+    color: #258F67;
+    cursor: pointer;
+}
+
+.alto header i:hover .buy-card > button:hover {
+    border: solid thin rebeccapurple;
+    transition: all .4s;
+}
+
+header i {
+    font-size: 3rem;
+    cursor: pointer;
 }
