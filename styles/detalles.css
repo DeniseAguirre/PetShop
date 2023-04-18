@@ -195,3 +195,9 @@ ul {
     width: 9rem !important;
     height: 2rem !important;
 }
+
+.barra-superior{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

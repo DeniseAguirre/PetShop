@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,43 +14,36 @@ main{
 }
 
 header{
-    /* background-color: rgba(0, 0, 0, 0.479); */
+    background-color: #019267;
     border-radius: 1rem;
 }
-
-.navbar-expand-lg .navbar-collapse {
-    flex-basis: auto;
-    justify-content: flex-end;
-}
-
-.navbar-brand {
-    margin-left: 1rem;
-}
-
-.nav-link {
-    font-weight: bold;
-    border: 1px solid #9e6e25;
-    border-radius: 4px;
+.info{
+    background-color: #245953;
+    padding: .3rem;
+    font-size: .7rem;
     text-align: center;
-    margin: 0.5rem;
-    color: #b6b6b6;
-    background-color: #0000005b;
+    color: white;
+}
+.img-logo {
+    width: 3rem;
+    height: auto;
+}
+.nombre {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.carrito {
+    align-self: center;
+    margin: 2rem;
 }
 
-.nav-link:hover {
-    color: #000000;
-    background-color: #5f5b5b;
-}
+
 
 .alto {
     min-height: 100vh;
 }
 
-
-.img-logo{
-    object-fit: cover;
-    width: 120px !important;
-}
 
 .d-block{
     height: 400px !important;
@@ -60,7 +53,7 @@ header{
 }
 
 h1 {
-    color: #9e6e25;
+    color: #ffffff;
     width: 30rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -101,13 +94,13 @@ h1 {
 
 h5{
     font-weight: bold;
-    color: #9e6e25;
+    color: #ffffff;
 }
 
 .btn-cards{
     font-size: 14px;
     padding: 8px 12px;
-    background-color: #000000;
+    background-color: #019267;
     color: #fffdfb;
     text-decoration: none;
     text-transform: uppercase;
@@ -152,8 +145,32 @@ h5{
     width: 100%;
 }
 
+.img-slider{
+    padding: 1rem;
+}
 
 
+footer {
+    background-color: #019267;
+    height: auto;
+    margin-top: auto;
+}
+.copyright {
+    color: white;
+    font-size: .8rem;
+    padding: 1rem ;
+    border-top: .5px solid #245953;
+}
+.redes-sociales {
+    align-self: center;
+    margin: 1rem;
+}
+
+.icon-redes {
+    font-size: 1.5rem; 
+    color: white;
+    margin: .5rem;
+}
 
 @media (min-width: 320px) and (max-width: 767px){
     .main-div {
@@ -175,9 +192,17 @@ h5{
         width: auto;
     }
 
+    .slider {
+        display: none;
+    }
+
     footer{
         flex-direction: column;
         width: auto;
         height: auto;
     }
 }
+
+
+
+

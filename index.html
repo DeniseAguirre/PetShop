@@ -11,41 +11,46 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./assets/images/1-PhotoRoom.png-PhotoRoom.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styleindex.css" />
     <title>Pet Shop |  Inicio</title>
   </head>
 <body>
 
-    <div class="container-fluid alto ">
+    <div class="container-fluid alto p-0 ">
     <header>
-        <nav class="navbar navbar-expand-lg bg-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
-              <img src="/images/logo-black.png" class="img-logo" alt="Pet Shop" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-        <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" href="/index.html">Inicio</a>
-                <a class="nav-link" href="./upcoming.html">Medicamentos</a>
-                <a class="nav-link" href="./past.html">Jugueteria</a>
-                <a class="nav-link" href="./contact.html">Contacto</a>
-                <a class="nav-link" href="#">Carrito</a>
-              </div>
+      <div class="info">
+        <div class="scroll-text">¡SOMOS TU TIENDA FAVORITA! - ¡TODO LO NECESARIO PARA TU MASCOTA LO ENCUENTRAS AQUI! -
+          ¡ENTREGAS EL MISMO DIA HÁBIL HASTA LAS 6:00 P.M. EN ARGENTINA Y COLOMBIA!
+
+        </div>
+      </div>
+
+      <div class="encabezado-logo-icons d-flex justify-content-between w-100">
+        <div class="marca d-flex justify-content-center m-3 align-items-center">
+          <h2 class="nombre">Pet</h2>
+          <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
+          <h2 class="nombre">Shop</h2>
+        </div>
+
+        <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
+      </div>
+      <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link text-black" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link text-black active" href="#">Farmacia</a>
+              <a class="nav-link text-black" href="#">Juguetes</a>
+              <a class="nav-link text-black" href="#">Contacto</a>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-indicators">
@@ -195,7 +200,23 @@
 			</div>
 
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-body d-flex justify-content-between">
+        <div class="marca d-flex m-3 align-items-center">
+          <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
+          <h2 class="nombre">PetShop</h2>
+        </div>
+        <div class="redes-sociales">
+          <i class="bi bi-facebook icon-redes"></i>
+          <i class="bi bi-instagram icon-redes"></i>
+        </div>
+      </div>
+      <div class="copyright d-flex justify-content-between">
+
+        <p>Pet Shop © Todos los derechos reservados.</p>
+        <p>Diseñado y Desarrollado por Grupo 3 - Cohort 46</p>
+      </div>
+    </footer>
     </div>
 
     <script
