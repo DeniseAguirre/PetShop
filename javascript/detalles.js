@@ -22,10 +22,11 @@ console.log(idArticulos)
 function crearDetalles( detalle ){
     let template=``
     template = `
-            <div class="col-5">
+    <div class="row p-1 d-flex justify-content-center" style="background-color: rgb(242, 225, 155);">
+    <div class="col-10 col-md-6" >
             <img class="img-fluid " id="imgarticles" src="${detalle.imagen}" alt="..." >
         </div>
-                    <div class="p-4 col-5 d-flex " id="nuevo">
+                    <div class="p-4 col-7 d-flex text-center" id="nuevo">
                         <h4 class="card-title">NOMBRE PRODUCTO</h4>
                         <p>${detalle.nombre}</p>   
                         <p><b>Categoria: ${detalle.categoria}}</p> 

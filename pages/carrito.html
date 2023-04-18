@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de compras</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -15,51 +13,88 @@
 
 </head>
 <body>
-    <div class="contenedor-principal conteiner-fluid vh-80">
         <header>
-          <div class="info">
-            <div class="scroll-text">¡SOMOS TU TIENDA FAVORITA! - ¡TODO LO NECESARIO PARA TU MASCOTA LO ENCUENTRAS AQUI! -
-              ¡ENTREGAS EL MISMO DIA HÁBIL HASTA LAS 6:00 P.M. EN ARGENTINA Y COLOMBIA!
-    
-            </div>
-          </div>
-    
-          <div class="encabezado-logo-icons d-flex justify-content-between w-100">
-            <div class="marca d-flex justify-content-center m-3 align-items-center">
-              <h1 class="nombre">Pet</h1>
-              <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
-              <h1 class="nombre">Shop</h1>
-            </div>
-    
-            <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
-          </div>
-          <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse barra-superior" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                  <a class="nav-link text-black" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link text-black active" href="#">Farmacia</a>
-                  <a class="nav-link text-black" href="./juguetes.html">Juguetes</a>
-                  <a class="nav-link text-black" href="./contacto.html">Contacto</a>
+            <div class="info">
+                <div class="scroll-text">¡SOMOS TU TIENDA FAVORITA! - ¡TODO LO NECESARIO PARA TU MASCOTA LO ENCUENTRAS AQUI! -
+                    ¡ENTREGAS EL MISMO DIA HÁBIL HASTA LAS 6:00 P.M. EN ARGENTINA Y COLOMBIA!
                 </div>
-              </div>
             </div>
-          </nav>
+
+            <div class="encabezado-logo-icons d-flex justify-content-between w-100">
+            <div class="marca d-flex justify-content-center m-3 align-items-center">
+                <h1 class="nombre">Pet</h1>
+                <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
+                <h1 class="nombre">Store</h1>
+                </div>      
+                <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+                <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse barra-superior" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a class="nav-link text-black" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link text-black active" href="#">Farmacia</a>
+                            <a class="nav-link text-black" href="./juguetes.html">Juguetes</a>
+                            <a class="nav-link text-black" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
 
-
+        
+        <main class="row d-flex justify-content-center">
             
+
+
+
         </main>
+        <footer class="footer">
+            <div class="footer-body d-flex justify-content-between">
+                <div class="marca d-flex m-3 align-items-center">
+                    <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
+                    <h1 class="nombre">PetShop</h1>
+                </div>
+                <div class="redes-sociales">
+                    <i class="bi bi-facebook icon-redes"></i>
+                    <i class="bi bi-instagram icon-redes"></i>
+                </div>
+            </div>
+            <div class="copyright d-flex justify-content-between">
+                <p>Pet Shop © Todos los derechos reservados.</p>
+                <p>Diseñado y Desarrollado por Grupo 3 - Cohort 46</p>
+            </div>
+        </footer>
 
 
 
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script> 
 </body>
 </html>
+
+<!-- 
+<div id="contenedorDetalles" class="row p-5 d-flex " style="background-color: rgb(242, 225, 155);">
+    <div class="col-10 col-md-6" >
+        <div class="col-5">
+            // AQUI SE IMPRIMEN LOS DETALLES
+        </div>
+    </div>
+</div>
+<div class="row d-flex justify-content-center text-center" >
+        <select class="form-select" aria-label="Default select example">
+            <option class="form-select" value="0">0</option>
+            <option class="form-select" value="1">1</option>
+            <option class="form-select" value="2">2</option>
+            <option class="form-select" value="3">3</option>
+        </select>
+    <button type="button" class="col-2 btn btn-outline-success btn-lg">Comprar</button>
+</div> -->
