@@ -12,9 +12,11 @@ if (!nombre.value||!apellido.value||!comentario.value){
     swal ( "Ups" ,  "Tiene que rellenar los campos!" ,  "error" )
     
 } else{
+
     swal("Que bueno!", "La Consulta se ha enviado correctamente!", "success");
+
+
 }
-    
 })
 
 
