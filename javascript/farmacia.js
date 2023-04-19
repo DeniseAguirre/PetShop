@@ -145,9 +145,17 @@ containerSearch.addEventListener("input", (e) => {
 let cart = [];
 let subtotal = 0;
 let cartList = document.getElementById("cart-quantity");
-    cartList.innerHTML = "Tu carrito está vacío";
-let boton = document.querySelector(".botones-carrito");
+cartList.innerHTML = "Tu carrito está vacío";
+let botones = document.querySelectorAll(".botones-carrito button");
+botones.forEach(function(boton) {
     boton.style.display = "none";
+});
+
+if(localStorage.getItem("cart")) {
+    cart = JSON.parse(localStorage.getItem("cart"));
+    subtotal = JSON.parse(localStorage.getItem("subtotal"));
+    updateCart();
+}
 
 function addToCart(button) {
     let name = button.dataset.name;
@@ -161,38 +169,63 @@ function addToCart(button) {
     cart.push(item);
     subtotal += price * quantity;
     updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("subtotal", JSON.stringify(subtotal));
 }
 
-
+function removeFromCart(index) {
+    let item = cart[index];
+    subtotal -= item.price * item.quantity;
+    cart.splice(index, 1);
+    updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("subtotal", JSON.stringify(subtotal));
+}
 
 function updateCart() {
     cartList = document.getElementById("cart-quantity");
     cartList.innerHTML = "";
     if(cart.length === 0) {
         cartList.innerHTML = "Tu carrito está vacío";
-        boton.style.display = "none";
+        botones.forEach(function(boton) {
+            boton.style.display = "none";
+        });
+        
     } else {
-        cart.forEach(function(item) {
+        cart.forEach(function(item, index) {
             let listItem = document.createElement("li");
-            listItem.innerHTML = `${item.name} - $${item.price} x ${item.quantity}unid.<hr>`;
+            listItem.innerHTML = `${item.name} - $${item.price} x ${item.quantity}unid. <button class="btn btn-dark" onclick="removeFromCart(${index})">Eliminar</button><hr>`;
             cartList.appendChild(listItem);
             
         });
-        boton.style.display = "inline";
+        botones.forEach(function(boton) {
+            boton.style.display = "inline";
+        });
+        
         
     }
     document.getElementById("subtotal").innerHTML = `Subtotal: $${subtotal}`;
-    
-
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("subtotal", JSON.stringify(subtotal));
 }
 
 function clearCart() {
     cart = [];
     subtotal = 0;
     updateCart();
+    localStorage.removeItem("cart");
+    localStorage.removeItem("subtotal");
 }
 
+const botonFinalizar = document.getElementById('finalizar');
+botonFinalizar.addEventListener("click", (e) => {
+    swal("¡Gracias por su compra!", "Su pedido fue realizado con exito.", "success");
+});
 
+const botonVaciar = document.getElementById('vaciar');
+botonVaciar.addEventListener("click", (e) => {
+    swal("El carrito está vacío", "Seguí comprando.", "success");
+});
 
 
 
