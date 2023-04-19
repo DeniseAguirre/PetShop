@@ -36,24 +36,25 @@
           <img class="img-logo" src="../images/logo-white.png" alt="logo-petshop">
           <h1 class="nombre">Store</h1>
         </div>
-        <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;">
-          <div class="buy-card">
-            <ul class="car-card">
-              <li>Imagen</li>
-              <li>nombre</li>
-              <li>Precio</li>
-              <li>Cantidad</li>
-            </ul>
-            <div class="items-cart"  id="cart">
-              <ul id="cart-quantity">
-
-              </ul>
-              <p id="subtotal"> </p>
-            </div>
-            <button>Vaciar Carrito</button>
-          </div>
-        </i>
         
+
+        <!-- CARRITO DE COMPRAS -->
+        <div class="carrito-container">
+          <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
+          <div class="buy-card">
+            <div class="items-cart" id="cart">
+              <p class=""> Mi carrito </p>
+              <hr>
+              <ul id="cart-quantity" style="color: black; font-size: medium; margin: 15px;"></ul>
+            </div>
+            <p id="subtotal" style="color: black; font-size: medium; margin: 15px;"></p>
+            <div class="d-flex botones-carrito">
+              <button onclick="clearCart()" class="btn btn-dark boton-carrito vaciar-carrito">Vaciar Carrito</button>
+              <button onclick="" class="btn btn-dark boton-carrito">Finalizar Compra</button>
+            </div>
+          </div>
+        </div>
+
       </div>
       <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
         <div class="container-fluid">
@@ -78,9 +79,9 @@
       </div>
       <div class="filtros row p-4 d-flex justify-content-center">
         <div class="categorias d-flex justify-content-around col-8" id="category-js">
-            <a class="link-categorias active" data-value="Todos"><i class="fa-solid fa-paw fa-lg"></i> Todos</a>
-            <a class="link-categorias" data-value="Perros"><i class="fa-solid fa-dog fa-lg"></i> Perros</a>
-            <a class="link-categorias" data-value="Gatos"><i class="fa-solid fa-cat fa-lg"></i> Gatos</a>
+          <a class="link-categorias active" data-value="Todos"><i class="fa-solid fa-paw fa-lg"></i> Todos</a>
+          <a class="link-categorias" data-value="Perros"><i class="fa-solid fa-dog fa-lg"></i> Perros</a>
+          <a class="link-categorias" data-value="Gatos"><i class="fa-solid fa-cat fa-lg"></i> Gatos</a>
         </div>
         <div class="search col-4">
           <form class="d-flex" role="search">
@@ -92,7 +93,7 @@
         id="cards-farmacia">
 
       </div>
-  
+
     </main>
     <footer>
       <div class="footer-body d-flex justify-content-between">

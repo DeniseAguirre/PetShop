@@ -60,6 +60,7 @@ header {
 .carrito {
     align-self: center;
     margin: 2rem;
+    cursor: pointer;
 }
 
 .navegacion {
@@ -145,7 +146,8 @@ ul {
 
 .link-categorias {
     text-decoration: none;
-    color: black
+    color: black;
+    cursor: pointer;
 
 }
 
@@ -208,6 +210,10 @@ ul {
     .search {
         width: 100%;
     }
+     /* CARRITO DE COMPRAS */
+    .buy-card {
+        width: 200px;
+    }
     
 }
 
@@ -235,55 +241,47 @@ ul {
 
 /* CARRITO */
 
-.buy-card button{
+.carrito-container {
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  .buy-card {
     display: none;
-}
-.car-card{
-    display: none;
-}
-
-.car-card li{
-    list-style: none;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.alto header i:hover > .buy-card{
-    width: 400px;
-    height: 400px;
     position: absolute;
-    z-index: 99;
+    top: 10;
     right: 0;
-    background-color: #f7f6f6;
-    border-radius: 1rem;
-}
-
-.alto header i:hover .car-card{
-    font-size: 1rem;
+    background-color: #F5F3E8;
+    border-radius: .2rem;
+    padding: .5rem;
+    z-index: 1;
+    width: 370px;
+    flex-grow: 1;
+    color: #258F67;
+  }
+  
+  .carrito-container:hover .buy-card {
     display: flex;
-    justify-content: center;
-    margin: 0 10px 0 10px;
-    border-bottom: solid thin #258F67;
-    color: #258F67;
-}
+    align-items: center;
+    flex-direction: column;
+  }
 
-.alto header i:hover .buy-card > button{
-    display: block;
-    width: 90%;
-    padding: 0.5rem;
-    margin: 10px auto;
-    background-color: transparent;
-    border: solid thin #258F67;
-    color: #258F67;
-    cursor: pointer;
-}
-
-.alto header i:hover .buy-card > button:hover {
+  .vaciar-carrito {
     border: solid thin rebeccapurple;
     transition: all .4s;
+  }
+
+  #cart-quantity {
+    list-style: none;
+  }
+
+
+.boton-carrito {
+    margin: .5rem;
+    font-size: .8rem;
 }
 
-header i {
-    font-size: 3rem;
-    cursor: pointer;
+.items-cart {
+    width: 90%;
+    margin: 0;
 }
