@@ -10,6 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="/images/logo-black.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link
@@ -17,11 +18,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="./assets/images/1-PhotoRoom.png-PhotoRoom.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styleindex.css" />
-    <title>Pet Shop |  Inicio</title>
+    <title>PetStore | Inicio</title>
   </head>
 <body>
 
     <div class="container-fluid alto p-0 ">
+
     <header>
       <div class="info">
         <div class="scroll-text">¡SOMOS TU TIENDA FAVORITA! - ¡TODO LO NECESARIO PARA TU MASCOTA LO ENCUENTRAS AQUI! -
@@ -36,17 +38,24 @@
           <img class="img-logo animate__animated animate__wobble" src="../images/logo-white.png" alt="logo-petshop">
           <h2 class="nombre animate__animated animate__wobble">Store</h2>
         </div>
-        <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;">
+
+        <div class="carrito-container">
+          <i class="bi bi-cart3 carrito" style="font-size: 1.5rem; color: white;"></i>
           <div class="buy-card">
-            <ul class="car-card">
-              <li>Imagen</li>
-              <li>nombre</li>
-              <li>Precio</li>
-              <li>Cantidad</li>
-            </ul>
-            <button>Vaciar Carrito</button>
+            <div class="items-cart" id="cart">
+              <p class=""> Mi carrito </p>
+              <hr>
+              <ul id="cart-quantity" style="color: black; font-size: medium; margin: 15px;"></ul>
+            </div>
+            <p id="subtotal" style="color: black; font-size: medium; margin: 15px;"></p>
+            <div class="d-flex botones-carrito">
+              <button onclick="clearCart()" class="btn btn-dark boton-carrito vaciar-carrito" id="vaciar">Vaciar Carrito</button>
+              <button onclick="" class="btn btn-dark boton-carrito boton-finalizar" id="finalizar">Finalizar Compra</button>
+            </div>
           </div>
-        </i>
+        </div>
+
+
       </div>
       <nav class="navbar navbar-expand-md bg-body-tertiary navegacion">
         <div class="container-fluid">
@@ -56,9 +65,9 @@
           <div class="collapse navbar-collapse barra-superior" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
               <a class="nav-link text-black active1 " aria-current="page" href="#">Inicio</a>
-              <a class="nav-link text-black " href="#">Farmacia</a>
-              <a class="nav-link text-black" href="#">Juguetes</a>
-              <a class="nav-link text-black" href="#">Contacto</a>
+              <a class="nav-link text-black " href="/pages/farmacia.html">Farmacia</a>
+              <a class="nav-link text-black" href="/pages/juguetes.html">Juguetes</a>
+              <a class="nav-link text-black" href="/pages/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -132,7 +141,7 @@
       </div>
       <div class="container-h1">
             <p class="p-text">
-              ¡Bienvenidos a nuestra tienda virtual de mascotas! Estamos ubicados en Colombia y estamos encantados de poder ofrecerle una amplia variedad de productos y servicios para el cuidado y la felicidad de sus mascotas. <br> <br>
+              ¡Bienvenidos a nuestra tienda virtual de mascotas! Estamos ubicados en 2 paises de <b>LATAM</b> Colombia, Argentina y estamos encantados de poder ofrecerle una amplia variedad de productos y servicios para el cuidado y la felicidad de sus mascotas. <br> <br>
               Nuestra tienda en línea es el lugar perfecto para comprar productos de alta calidad para sus mascotas, desde alimentos y juguetes hasta productos de higiene y cuidado personal. Ofrecemos una amplia selección de productos de marcas reconocidas para garantizar la calidad y la satisfacción de nuestros clientes. <br> <br>
               Nos apasiona el cuidado y la felicidad de las mascotas y nos esforzamos por ofrecer el mejor servicio posible a nuestros clientes. ¡Gracias por visitar nuestra tienda en línea y esperamos poder ayudarlo a cuidar a su mascota de la mejor manera posible!
             </p>
@@ -142,7 +151,7 @@
       </div>
 
       <div class="d-flex1">
-            <h5>EN PET SHOP</h5>
+            <h2 class="nombre1" style="color: #258F67;">PetStore</h2>
             <h3>¡Tenemos todas las opciones para tu mascota!</h3>
       </div>
           
@@ -157,7 +166,7 @@
                     <h3 class="card-title">Farmacia</h3>
                     <h5 class="card-title">Perros y Gatos</h5>
                     <p class="card-text">Los mejores alimentos, medicamentos, accesorios y productos de aseo para tus peluditos!.</p>
-                    <button class="btn-cards">comprar</button>
+                    <a href="/pages/farmacia.html" class="btn-cards">COMPRAR</a>
                   </div>
                 </div>
               </div>
@@ -172,8 +181,8 @@
                   <div class="card-body">
                     <h3 class="card-title">Jugueteria</h3>
                     <h5 class="card-title">Perros y Gatos</h5>
-                    <p class="card-text">Los mejores alimentos, medicamentos, accesorios y productos de aseo para tus peluditos!.</p>
-                    <button class="btn-cards">comprar</button>
+                    <p class="card-text">Los mejores juguetes, productos y accesorios para tus peluditos!.</p>
+                    <a href="/pages/juguetes.html" class="btn-cards">comprar</a>
                   </div>
                 </div>
               </div>
@@ -212,6 +221,8 @@
 			</div>
 
     </main>
+
+
     <footer>
       <div class="footer-body d-flex justify-content-between">
         <div class="marca d-flex m-3 align-items-center">
@@ -221,22 +232,28 @@
         <div class="redes-sociales">
           <i class="bi bi-facebook icon-redes"></i>
           <i class="bi bi-instagram icon-redes"></i>
+          <i class="bi bi-whatsapp icon-redes"></i>
+          <i class="bi bi-envelope-paper icon-redes"></i>
         </div>
       </div>
       <div class="copyright d-flex justify-content-between">
-
         <p>Pet Store © Todos los derechos reservados.</p>
-        <p>Diseñado y Desarrollado por Grupo 3 - Cohort 46</p>
+        
+        <p>Diseñado y Desarrollado por Grupo 70/Triple - Cohort 46</p>
       </div>
+      <a href="#" class="back-to-top is-visible" title="Back To Top">
+        <i class="lorada lorada-arrow-up"> 
+                  ↥
+              </i>
+      </a>
     </footer>
-    </div>
 
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
-

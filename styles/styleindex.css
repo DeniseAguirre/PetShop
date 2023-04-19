@@ -45,67 +45,53 @@ header{
 
 }
 
-.nav-link:hover {
-    color: #000000;
-    background-color: #258F67;
-    border-radius: 0.5rem;
-}
+/* CARRITO */
 
-/* Carrito  */
-
-.buy-card button{
+.carrito-container {
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .buy-card {
     display: none;
-}
-.car-card{
-    display: none;
-}
-
-.car-card li{
-    list-style: none;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.alto header i:hover > .buy-card{
-    width: 400px;
-    height: 400px;
     position: absolute;
-    z-index: 99;
+    top: 10;
     right: 0;
-    background-color: #f7f6f6;
-    border-radius: 1rem;
-}
-
-.alto header i:hover .car-card{
-    font-size: 1rem;
+    background-color: #F5F3E8;
+    border-radius: .2rem;
+    padding: .5rem;
+    z-index: 1;
+    width: 370px;
+    flex-grow: 1;
+    color: #258F67;
+  }
+  
+  .carrito-container:hover .buy-card {
     display: flex;
-    justify-content: center;
-    margin: 0 10px 0 10px;
-    border-bottom: solid thin #258F67;
-    color: #258F67;
-}
+    align-items: center;
+    flex-direction: column;
+  }
 
-.alto header i:hover .buy-card > button{
-    display: block;
-    width: 80%;
-    padding: 5px;
-    margin: 5px auto;
-    background-color: transparent;
-    border: solid thin #258F67;
-    color: #258F67;
-    cursor: pointer;
-}
-
-.alto header i:hover .buy-card > button:hover {
-    border: solid thin rgb(0, 0, 0);
+  .vaciar-carrito {
+    border: solid thin rebeccapurple;
     transition: all .4s;
+  }
+
+  #cart-quantity {
+    list-style: none;
+  }
+
+
+.boton-carrito {
+    margin: .5rem;
+    font-size: .8rem;
 }
 
-header i {
-    font-size: 3rem;
-    cursor: pointer;
+.items-cart {
+    width: 90%;
+    margin: 0;
 }
-
 
 .active1 {
     border-bottom: 3px solid  #258F67;
@@ -120,7 +106,7 @@ header i {
 .d-block{
     height: 400px !important;
     object-fit: cover;
-    object-position: 0% 50%;
+    object-position: 0% 60%;
 }
 
 h1 {
@@ -173,12 +159,15 @@ h5{
 .btn-cards{
     font-size: 14px;
     padding: 8px 12px;
-    background-color: #019267;
-    color: #fffdfb;
+    background-color: #EFC368;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300px;
-    border-radius: 8px
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    
 } 
 
 .d-block1 {
@@ -220,7 +209,49 @@ h5{
     overflow: hidden;
 }
 
-
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #883A1B;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;  
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    z-index: 300;
+}
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top i {
+    font-weight: bold;
+}
+.back-to-top {
+    background-color:#EFC368;
+    color: #2D2A2B;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 35%);
+}
+.lorada {
+    font-family: "lorada-font";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: inherit;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+}
 
 footer {
     background-color: #019267;
@@ -236,6 +267,7 @@ footer {
 .redes-sociales {
     align-self: center;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .icon-redes {
@@ -270,6 +302,5 @@ footer {
         height: auto;
     }
 }
-
 
 
