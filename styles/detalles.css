@@ -15,6 +15,7 @@ font-family: 'Jost', sans-serif; */
 }
 
 body {
+    font-family: "inter", sans-serif;
     max-width: 100%;
     min-height: 100vh;
     display: flex;
@@ -22,12 +23,19 @@ body {
     background-color: #F5F3E8;
 }
 
+.alto {
+    min-height: 50vh;
+}
+
 .contenedor-principal {
     padding: 0 !important;
     flex-direction: column;
 }
 
-
+#cantidad{
+    min-height: 2rem;
+    min-width: 2rem;
+}
 
 header {
     background-color:  #258F67;
@@ -304,6 +312,11 @@ ul {
     max-width: 4rem !important;
 }
 .comprar{
-    min-width: 12rem !important;
-    max-width: 12rem !important;
+    padding: 0.3rem !important;
+    font-size: 0.8rem !important;
+    min-width: 8rem !important;
+    max-width: 11rem !important;
+}
+.contenedortotal{
+    min-height: 100vh;
 }
